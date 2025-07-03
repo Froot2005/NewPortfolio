@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freddie Scaria Jose - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(145deg, #0a2e49, #003f5c);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+    .glass:hover {
+      transform: scale(1.01);
+    }
+    .glow-text {
+      color: #a8dcff;
+      text-shadow: 0 0 10px #3ecbff, 0 0 20px #3ecbff;
+    }
+    .glowing-profile {
+      border: 4px solid rgba(255, 255, 255, 0.4);
+      box-shadow:
+        0 0 15px rgba(173, 216, 255, 0.6),
+        0 0 30px rgba(0, 174, 255, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glowing-profile:hover {
+      transform: scale(1.05);
+      box-shadow:
+        0 0 25px rgba(173, 216, 255, 0.8),
+        0 0 40px rgba(0, 174, 255, 0.8);
+    }
+    input, textarea {
+      background-color: rgba(255,255,255,0.1);
+      color: white;
+    }
+    input::placeholder, textarea::placeholder {
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <header class="text-center p-8">
+    <h1 class="text-4xl md:text-5xl font-bold glow-text">Freddie Scaria Jose</h1>
+    <p class="text-ice-blue-200 mt-2 text-lg">Welcome to my portfolio</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 space-y-8 pb-12">
+    <!-- Centered Profile Photo -->
+    <div class="flex justify-center">
+      <img src="C:\Users\fredd\Pictures\Saved Pictures\WhatsApp Image 2025-07-03 at 22.38.26_2e591f3d.jpg" alt="Freddie Scaria Jose" class="w-80 h-80 rounded-full glowing-profile object-cover" />
+    </div>
+
+    <!-- Basic Info -->
+    <section class="glass p-6">
+      <h2 class="text-2xl font-semibold mb-4 glow-text">Basic Info</h2>
+      <p><strong>Name:</strong> Freddie Scaria Jose</p>
+      <p><strong>Age:</strong> 20</p>
+      <p><strong>Location:</strong> Ernakulam, Kerala, India</p>
+      <p><strong>Education:</strong> The Asian School Bahrain, The New Indian School Bahrain, RSET</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="glass p-6">
+      <h2 class="text-2xl font-semibold mb-4 glow-text">Skills</h2>
+      <ul class="list-disc pl-6">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+        <li>Unity, Unreal Engine</li>
+        <li>Game & Web App Development</li>
+      </ul>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="glass p-6">
+      <h2 class="text-2xl font-semibold mb-4 glow-text">Hobbies & Interests</h2>
+      <ul class="list-decimal pl-6">
+        <li>Gaming</li>
+        <li>Music</li>
+        <li>Movies</li>
+        <li>Making projects</li>
+      </ul>
+    </section>
+
+    <!-- Audio Section -->
+    <section class="glass p-6">
+      <h2 class="text-2xl font-semibold mb-4 glow-text">Audio Introduction</h2>
+      <div class="flex items-center justify-center">
+        <audio controls class="w-full max-w-md rounded-md shadow-lg">
+          <source src="C:\Users\fredd\Desktop\WhatsApp Audio 2025-07-03 at 22.38.24_2a6e39b8.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="glass p-6">
+      <h2 class="text-2xl font-semibold mb-4 glow-text">Contact Me</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block mb-1" for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-2 rounded-md border border-white bg-opacity-10 focus:outline-none"/>
+        </div>
+        <div>
+          <label class="block mb-1" for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full p-2 rounded-md border border-white bg-opacity-10 focus:outline-none"/>
+        </div>
+        <div>
+          <label class="block mb-1" for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message here..." class="w-full p-2 rounded-md border border-white bg-opacity-10 focus:outline-none"></textarea>
+        </div>
+        <button type="submit" class="px-6 py-2 rounded-md bg-blue-400 text-white font-semibold hover:bg-blue-500 transition">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center p-6 text-white bg-black bg-opacity-20">
+    <p>&copy; 2025 Freddie Scaria Jose</p>
+  </footer>
+</body>
+</html>
